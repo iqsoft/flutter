@@ -1,0 +1,57 @@
+name: bookaride_app
+description: "Ride booking project by Iqsoft Software Consultants, Vattamkulam."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  webview_flutter: ^4.13.1
+  geolocator: ^11.1.0
+  permission_handler: ^11.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+  flutter_native_splash: ^2.4.6
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/logo.png
+    - assets/splash/splash_logo.png
+    - assets/icon/app_icon.png
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  remove_alpha_ios: true
+
+  image_path: "assets/icon/app_icon.png"
+
+  adaptive_icon_background: "#000000"
+  adaptive_icon_foreground: "assets/icon/app_icon.png"
+
+flutter_native_splash:
+  color: "#000000"
+
+  image: assets/splash/splash_logo.png
+
+  android: true
+  ios: true
+  web: false
+
+  android_12:
+    image: assets/splash/splash_logo.png
+    icon_background_color: "#000000"
+    
